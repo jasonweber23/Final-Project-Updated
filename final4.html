@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Final Project</title>
+		<link href="final4.css" rel="stylesheet"/>
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header>
+		<img class="logo" src="images/logo.png" alt="mountain">
+		    <h1><a href="final.html" style="text-decoration:none">Associated Bank </a></h1>
+			<nav>
+				<ul>
+					<li><a href="final3.html">Open An Account</a></li>
+					<li><a href="final4.html">Sign Up </a></li>
+					<li><a href="final2.html">About Us</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		<div class="coupon">
+  <div class="container">
+  </div>
+  <img src="images/money.jpg" alt="Avatar" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h2><b>Earn up to $300</b></h2> 
+    
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 29, 2019</p>
+  </div>
+</div>
+	<div class="coupon1">
+		<form id="gform" method="POST"
+		action="https://script.google.com/macros/s/AKfycbyjsOBslmMgBU1Le6Ldx6OQEUeI1EYrFWec_KZr/exec" >
+		<label> Take a coupon to your nearest location  </label><br><br>
+		<input type="text"
+		required placeholder="Enter Code">
+		<br><br>
+		<button type="submit" value="Send Form"> Email Code </button>
+		</form>
+		</div>
+	<script language="JavaScript">
+		var frmvalidator  = new Validator("contactform");
+		frmvalidator.addValidation("name","req","Please provide your name");
+		frmvalidator.addValidation("email","req","Please provide your email");
+		frmvalidator.addValidation("email","email",
+		"Please enter a valid email address");
+	</script>
+	<footer>
+
+		<p>Copyright 2018, Associated Banc-Corp.</p>
+		<a href="https://www.facebook.com/associatedbank/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/AssociatedBank?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+		class="fa fa-twitter"></a>
+		<a href="https://www.youtube.com/channel/UCahVEQes2w51lED4BjSpy1w" class="fa fa-youtube"></a>
+		<a href="https://www.instagram.com/associatedbank/?hl=en" class="fa fa-instagram"></a>
+	</footer>
+	<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Final Project</title>
+		<link href="final3.css" rel="stylesheet"/>
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header>
+		<img class="logo" src="images/logo.png" alt="mountain">
+		    <h1><a href="final.html" style="text-decoration:none">Associated Bank </a></h1>
+			<nav>
+				<ul>
+					<li><a href="final3.html">Open An Account</a></li>
+					<li><a href="final4.html">Sign Up Bonus</a></li>
+					<li><a href="final2.html">About Us</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		
+		
+		<img class="img" src="images/Secure.jpg" alt="mountain" align="right">
+		
+
+		<div class="form">
+		<h2>Open an Account</h2>
+		<form id="gform" method="POST"
+		action="https://script.google.com/macros/s/AKfycbyjsOBslmMgBU1Le6Ldx6OQEUeI1EYrFWec_KZr/exec">
+		<label> Are you an existing customer? </label>
+		Yes <input type="checkbox">
+		No <input type="checkbox"> <br><br>
+		First Name: <input type="text" name="firstname"><br><br>
+		Last Name: <input type="text" name="lastname"><br><br>
+		Date of Birth <input type="date" name="DOB"><br><br>
+		Socail Security Number <input type="number" name="SSN"><br><br>
+		I have read the Electronic Notice Disclosure and Agreement <input type="checkbox"><br><br>
+		<button type="submit" value="Submit"> Submit </button>
+		</form>
+		</div>
+		<script language="JavaScript">
+		var frmvalidator  = new Validator("form");
+		frmvalidator.addValidation("email","req","Please provide your email");
+		frmvalidator.addValidation("email","email",
+		"Please enter a valid email address");
+		</script>
+		
+		
+	<footer>
+
+		<p>Copyright 2018, Associated Banc-Corp.</p>
+		<a href="https://www.facebook.com/associatedbank/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/AssociatedBank?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+		class="fa fa-twitter"></a>
+		<a href="https://www.youtube.com/channel/UCahVEQes2w51lED4BjSpy1w" class="fa fa-youtube"></a>
+		<a href="https://www.instagram.com/associatedbank/?hl=en" class="fa fa-instagram"></a>
+	</footer>
+	<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+	</body>
+</html>
